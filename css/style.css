@@ -1,0 +1,97 @@
+:root {
+  --font: 'Poppins', sans-serif;
+  --white: #fff;
+  --light-black: rgba(33, 31, 47, 1);
+  --light-gray: rgba(200, 198, 212, 1);
+  --medium-gray: rgba(145, 140, 169, 1);
+  --red: rgba(231, 29, 54, 1);
+  --eris-black: rgba(40, 36, 21, 1);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--light-black);
+  background: rgb(33,31,47);
+  background: -moz-linear-gradient(90deg, rgba(33,31,47,1) 0%, rgba(145,140,169,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(33,31,47,1) 0%, rgba(145,140,169,1) 100%);
+  background: linear-gradient(90deg, rgba(33,31,47,1) 0%, rgba(145,140,169,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#211f2f",endColorstr="#918ca9",GradientType=1); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--white);
+  width: 605px;
+  height: 300px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container__title {
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 1rem;
+  font-size: 30px;
+}
+
+.container__input {
+  width: 90%;
+  margin: 1rem 3rem;
+  border: none;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  padding: 1rem 0;
+  padding-left: 15px;
+}
+
+
+.container__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container__button-generate {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.container__button-generate:active {
+  background-color: #810E1B;
+}
+
+.container__button-copy {
+  background-color: var(--eris-black);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container__button-copy:active {
+  background-color: #0D0C07;
+}
