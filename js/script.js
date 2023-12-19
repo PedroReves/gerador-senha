@@ -12,7 +12,7 @@ function gerarSenha() {
   const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&*'
 
   for(let i = 0; i < length; i++) {
-    const numeroAleatorio = Math.floor(Math.random() * chars.length + 1)
+    const numeroAleatorio = Math.floor(Math.random() * chars.length)
     password += chars[numeroAleatorio];
   }
   input.value = password
